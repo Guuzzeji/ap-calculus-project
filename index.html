@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.min.css">
+    <title>Derivatives Toolkit (AP-Calculus)</title>
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="icon"
+        href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn3.iconfinder.com%2Fdata%2Ficons%2Fdatabases-2%2F512%2Ffunction-512.png&f=1&nofb=1">
+</head>
+
+<body>
+    <div>
+        <br>
+        <h1>Derivatives Toolkit (AP-Calculus)</h1>
+        <hr>
+    </div>
+
+    <div>
+        <h2><u>Overview</u></h2>
+        <b>Derivatives are the slopes (rate of change) of a given function.</b>
+        <p>Limit definition of derivatives</p>
+        <img src="https://latex.codecogs.com/svg.image?f%27%28x%29%20%3D%20%5Cfrac%7Bdy%7D%7Bdx%7D%20%3D%20%5Clim_%7Bc%20%5Cto%200%7D%20%5Cfrac%7Bf%28x+c%29-f%28x%29%29%7D%7Bc%7D"
+            alt="">
+        <p><b>Examples</b> of derivatives and what they mean:</p>
+        <ul>
+            <li><img src="https://latex.codecogs.com/svg.image?f%28x%29" alt=""> <b>[position]</b>, derivatives is
+                <img src="https://latex.codecogs.com/svg.image?f%27%28x%29" alt=""> <b>[velocity]</b>
+            </li>
+            <br>
+            <li><img src="https://latex.codecogs.com/svg.image?f%27%28x%29" alt=""> <b>[velocity]</b>, derivatives is
+                <img src="https://latex.codecogs.com/svg.image?f%27%27%28x%29" alt=""> <b>[acceleration]</b>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <br>
+        <h2><u>Simple Derivatives Rules</u></h2>
+
+        <div>
+            <p id="constant_rule"><b>Constant Rule</b></p>
+            <ul>
+                <li>
+                    <img src="https://latex.codecogs.com/svg.image?%5Cfrac%7Bd%7D%7Bdx%7D%28c%29%20%3D%200" alt="">
+                    <p><b>Explain:</b> Taking a derivative of a value (like 1 or 999), will return 0 as its derivative.
+                        "c" represents any number without a variable ("x") attached to it
+                    </p>
+                </li>
+            </ul>
+            <hr>
+        </div>
+
+        <div>
+            <p id="power_rule"><b>Power Rule</b> ( <a href="/example.html#example_power">Example</a> )</p>
+            <ul>
+                <li>
+                    <img src="https://latex.codecogs.com/svg.image?%5Cfrac%7Bd%7D%7Bdx%7D%20%28x%5E%7Bn%7D%29%20%3D%20nx%5E%7Bn-1%7D"
+                        alt="">
+                    <p><b>Explain:</b> "n" represents a expondent.</p>
+                </li>
+            </ul>
+            <hr>
+        </div>
+
+        <div>
+            <p id="other_rules"><b>Trig Rule & Others</b> ( <a href="/example.html#example_other">Example</a> )</p>
+            <ul>
+                <li>
+                    <img src="https://latex.codecogs.com/svg.image?\dpi{110}\frac{d}{dx}&space;sin(x)&space;=&space;cos(x)"
+                        alt="">
+                </li>
+                <br>
+                <li>
+                    <img src="https://latex.codecogs.com/svg.image?\dpi{110}\frac{d}{dx}&space;cos(x)&space;=&space;-sin(x)"
+                        alt="">
+                </li>
+                <br>
+                <li>
+                    <img src="https://latex.codecogs.com/svg.image?\dpi{110}\frac{d}{dx}ln(x)&space;=&space;\frac{1}{x}"
+                        alt="">
+                </li>
+                <br>
+                <li>
+                    <img src="https://latex.codecogs.com/svg.image?\dpi{110}\frac{d}{dx}(e^x)&space;=&space;e^x" alt="">
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <br>
+        <h2><u>Complex Derivatives Rules</u></h2>
+
+        <div>
+            <p id="product_rule"><b>Prodect Rule</b> ( <a href="/example.html#example_product">Example</a> )</p>
+            <ul>
+                <li>
+                    <img src="https://latex.codecogs.com/svg.image?\dpi{110}\frac{d}{dx}(f(x)*g(x))&space;=&space;f'(x)g(x)&space;&plus;&space;f(x)g'(x)"
+                        alt="">
+                    <p><b>Explain:</b> Only use this if you are multiplying two function / expression
+                    </p>
+                </li>
+            </ul>
+            <hr>
+        </div>
+
+        <div>
+            <p id="quotient_rule"><b>Quotient Rule</b> ( <a href="/example.html#example_quotient">Example</a> )</p>
+            <ul>
+                <li>
+                    <img src="https://latex.codecogs.com/svg.image?\dpi{110}\frac{d}{dx}\frac{f(x)}{g(x)}&space;=&space;\frac{f'(x)g(x)-f(x)g'(x)}{(g(x))^2}"
+                        alt="">
+                    <p><b>Explain:</b> Only use this if you are dividing two function / expression
+                    </p>
+                </li>
+            </ul>
+            <hr>
+        </div>
+
+        <div>
+            <p id="chain_rule"><b>Chain Rule</b> ( <a href="/example.html#example_chain">Example</a> )</p>
+            <ul>
+                <li>
+                    <img src="https://latex.codecogs.com/svg.image?\dpi{110}\frac{d}{dx}f(g(x))&space;=&space;f'(g(x))*g'(x)"
+                        alt="">
+                    <p><b>Explain:</b> Only use this if you have different layers within a function / expression
+                    </p>
+                </li>
+            </ul>
+            <hr>
+        </div>
+
+        <div>
+            <p id="implict_rule"><b>Implict Different Rule</b> ( <a href="/example.html#example_implict">Example</a> )
+            </p>
+            <ul>
+                <li>
+                    <img src="https://latex.codecogs.com/svg.image?\dpi{110}\frac{d}{dx}f(y)+f(x)&space;=&space;f'(y)\frac{dy}{dx}+f'(x)"
+                        alt="">
+                    <p>
+                        <b>Steps on how to do Implict Different</b>
+                    <ol>
+                        <li>Identify all variable within the function / equation. Looking for "y" and "x" terms.</li>
+                        <li>Collect all term involving a non "x" term (or non-primary term) on the left side of the
+                            function / equation. Put all left over terms and expression on the right side of the
+                            function / equation (all values and variable like "x")</li>
+                        <br>
+                        <li>Factor for <img align="middle" src="https://latex.codecogs.com/svg.image?\frac{dy}{dx}"
+                                alt=""> out the
+                            left side of the equation</li>
+                        <br>
+                        <li>Solve for <img align="middle" src="https://latex.codecogs.com/svg.image?\frac{dy}{dx}"
+                                alt=""> and simplify the equation if needed</li>
+                    </ol>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <br>
+        <h2><u>Graph Derivatives / Relationships</u></h2>
+
+        <div>
+            <iframe src="https://www.desmos.com/calculator/xw4jplznfa" frameborder="0"></iframe>
+            <h3><img src="https://latex.codecogs.com/svg.image?f(x)\to&space;f'(x)" alt=""></h3>
+            <a target="_blank" href="https://www.desmos.com/calculator/xw4jplznfa">Graph</a>
+            <p>As you can see we are able to generate a f'(x) equation from f(x). There is also a relationship between
+                f'(x) (or g(x)) and f(x), f'(x) (or g(x)) represents the slops at different points onn the f(x)
+                function. For instance, the
+                zero points on f'(x) (or g(x)) represents <b>Critical Points</b>, which point on the f(x) function that
+                have a
+                slope of zero. These zero slopes are either min or max values on the f(x) function. So points like (0,0)
+                and (7.385, 0) on f'(x) are all points on where f(x) has a slope of
+                zero.</p>
+            <p>Additionally, any points above the x-axis are increasing / positive slope values. Likewise,
+                anything below the x-axis is a negative slope value. So from the initial [-∞, -0.397] on the f'(x) (or
+                g'(x)) are all negative slope values and [0.658, 7.385] on the f'(x) (or g'(x)) are all positive slope
+                values.</p>
+            <p>In physics terms, f(x) would be a postion graph, while f'(x) would be a velocity graph.</p>
+            <hr>
+            <br>
+        </div>
+
+        <div>
+            <iframe src="https://www.desmos.com/calculator/cb9xc3gc61" frameborder="0"></iframe>
+            <h3><img src="https://latex.codecogs.com/svg.image?f'(x)\to&space;f''(x)" alt=""></h3>
+            <a target="_blank" href="https://www.desmos.com/calculator/cb9xc3gc61">Graph</a>
+            <p>f'(x) and f''(x) is also similar to the first graph relationship. But instead of critical points we have
+                <b>Points of Inflection</b>, which are points that show when the function changes it concavely.
+            </p>
+            <p>Points like [-∞, -0.2205] on f''(x) are positive, so it showing that the function will be <b>Convave
+                    Up</b>
+                (will have a upside down "U" shape on f(x)). While points from [-0.2205, 0.3946] show that the
+                function
+                will <b>Convave Down</b> (will have a "U" shape on f(x))</p>
+            <p>In physics terms, f'(x) would be a velocity graph, while f''(x) would be a acceleration graph.</p>
+            <hr>
+            <br>
+        </div>
+    </div>
+
+    <div>
+        <h2><u>Graph Vocabulary & Terms</u></h2>
+        <p><b>Critical Points</b>: x intercepts on a f'(x) graph that represents points on the f(x) graph that
+            have a
+            slope of zero. These zero slopes are either min or max values on the f(x) function.</p>
+        <p><b>Points of Inflection</b>: x intercepts on a f''(x) graph that represents a change in concavely on the f(x)
+            graph and represents points on the f'(x) that have a slope of zero.</p>
+        <p><b>Convave Up</b>: Found by looking at either the f''(x) or different values along the f'(x) graph. Graphs
+            that do convave up will have a "U" shape on f(x) and will be positive values f''(x) graph, will also have a
+            change
+            from negative to positive values on the f'(x) graph.</p>
+        <p><b>Convave Down</b>: Found by looking at either the f''(x) or different values along the f'(x) graph. Graphs
+            that do convave down will have a upside-down "U" shape on f(x) and will be negative values f''(x) graph,
+            will also
+            have a change
+            from positive to negative values on the f'(x) graph.</p>
+        <br>
+    </div>
+
+    <br>
+    <div>
+        <footer>
+            <center>
+                <p>Copyright Gabe</p>
+            </center>
+        </footer>
+    </div>
+</body>
+
+</html>
